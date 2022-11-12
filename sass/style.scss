@@ -1,0 +1,61 @@
+@import "utils/variables";
+@import "components/navigation";
+@import "base/base";
+
+%button_wide {
+  width: 300 / 800 * 100%;
+}
+
+%button_common {
+  color: white;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin h_transform($angle: -5deg) {
+  transform: rotate($angle);
+  -ms-transform: rotate($angle);
+  -moz-transform: rotate($angle);
+  -webkit-transform: rotate($angle);
+}
+
+article {
+  div {
+    h3 {
+      color: $color2;
+      font-size: 28px;
+    }
+    p {
+      color: $color3;
+      font-size: 20px;
+    }
+  }
+  div:nth-child(1) {
+    h3:nth-child(1) {
+      @include h_transform(-3deg);
+    }
+  }
+  div:nth-child(2) {
+    h3:nth-child(1) {
+      @include h_transform();
+    }
+  }
+}
+
+.btn-success {
+  @extend %button_common;
+  @extend %button_wide;
+  background-color: lawngreen;
+}
+
+.btn-warning {
+  @extend %button_common;
+  background-color: darkorange;
+}
+
+.btn-error {
+  @extend %button_common;
+  background-color: orangered;
+}

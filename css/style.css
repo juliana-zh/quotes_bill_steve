@@ -1,0 +1,59 @@
+nav {
+  display: flex;
+  background-color: #f8f594; }
+  nav a {
+    flex: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 20px; }
+    nav a:hover {
+      background-color: yellow; }
+    nav a:active {
+      background-color: greenyellow; }
+    nav a.active {
+      color: #b312db;
+      font-weight: bold;
+      font-size: 24px; }
+
+* {
+  box-sizing: border-box; }
+
+.btn-success {
+  width: 37.5%; }
+
+.btn-success, .btn-warning, .btn-error {
+  color: white;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer; }
+
+article div h3 {
+  color: darkblue;
+  font-size: 28px; }
+
+article div p {
+  color: darkgreen;
+  font-size: 20px; }
+
+article div:nth-child(1) h3:nth-child(1) {
+  transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg); }
+
+article div:nth-child(2) h3:nth-child(1) {
+  transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg); }
+
+.btn-success {
+  background-color: lawngreen; }
+
+.btn-warning {
+  background-color: darkorange; }
+
+.btn-error {
+  background-color: orangered; }
